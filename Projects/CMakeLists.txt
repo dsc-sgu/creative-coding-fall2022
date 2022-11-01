@@ -1,0 +1,7 @@
+SET(curdir ${CMAKE_CURRENT_LIST_DIR})
+FILE(GLOB children RELATIVE ${curdir} ${curdir}/*)
+FOREACH(child ${children})
+    IF(IS_DIRECTORY ${curdir}/${child})
+        add_subdirectory(${child})
+    ENDIF()
+ENDFOREACH()

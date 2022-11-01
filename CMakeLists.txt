@@ -1,0 +1,5 @@
+cmake_minimum_required(VERSION 3.0)
+project(cc-fall2022)
+set(SOLUTION_ROOT ${CMAKE_CURRENT_LIST_DIR})
+add_subdirectory(Libraries)
+add_subdirectory(Projects)
