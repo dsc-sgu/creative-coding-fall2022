@@ -13,6 +13,7 @@ build() {
     cmake -DBUILD_SHARED_LIBS=False \
           -S . -B ./Build \
           -D CMAKE_BUILD_TYPE=Release \
+          -DCMAKE_EXPORT_COMPILE_COMMANDS=ON \
     && make -j -C ./Build
 }
 
